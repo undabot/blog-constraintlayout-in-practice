@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/constraint_layout"
+        app:layout_constraintDimensionRatio="5:2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/action_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="@dimen/list_item_content_spacing"
+        android:layout_marginRight="@dimen/list_item_content_spacing"
+        android:src="@drawable/ic_star_border"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintRight_toRightOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/image"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/profile_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/list_item_content_spacing"
+        android:layout_marginTop="@dimen/list_item_content_spacing"
+        android:scaleType="fitCenter"
+        android:src="@drawable/undabot_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:lines="1"
+        android:paddingTop="2dp"
+        android:text="Name Surname"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:text="Two minutes ago"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="@+id/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_item_content_spacing"
+        android:layout_marginTop="@dimen/list_item_content_spacing"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/comments_label"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/comments_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/list_item_content_spacing"
+        android:gravity="right"
+        android:paddingLeft="10dp"
+        android:text="@string/comments_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toRightOf="@+id/title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_goneMarginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/hide"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_content_spacing"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:paddingRight="10dp"
+            android:text="@string/description"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/comments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/list_item_content_spacing"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lineSpacingExtra="8dp"
+            android:maxLines="3"
+            android:paddingLeft="10dp"
+            android:text="@string/last_comment"
+            android:textSize="12sp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/list_item_content_spacing"
+        android:layout_marginTop="@dimen/list_item_content_spacing"
+        android:text="@string/hide_button_text"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_comment"
+        app:layout_constraintTop_toBottomOf="@+id/container"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/list_item_content_spacing"
+        android:paddingRight="@dimen/list_item_content_spacing"
+        android:text="@string/comment_button_text"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/hide"
+        app:layout_constraintRight_toLeftOf="@+id/share"
+        app:layout_constraintTop_toTopOf="@+id/hide"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_button_text"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/btn_comment"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_comment"/>
+
+</android.support.constraint.ConstraintLayout>

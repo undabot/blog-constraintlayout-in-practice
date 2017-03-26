@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ConstraintLayout</string>
+    <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ornare purus. Vestibulum vestibulum dignissim metus, sed tincidunt ex porta sit amet. Sed suscipit neque eu suscipit finibus. Praesent fringilla accumsan mi at maximus. Sed fringilla vel lectus vitae tempor. Aenean efficitur suscipit sem, quis ornare lectus congue et. In et viverra eros. Nunc id accumsan dolor. Duis id vestibulum nisi. Duis vitae massa quis tellus scelerisque tristique. Nunc eu nisi sem. Duis posuere nec eros at finibus. Nam cursus tellus nec nulla malesuada pulvinar. Maecenas ornare ex id metus hendrerit, eu eleifend velit eleifend. Ut ullamcorper sapien sed pretium ullamcorper.</string>
+    <string name="last_comment">Consectetur adipiscing elit.!\nVestibulum vestibulum dignissim metus!\nSed suscipit!!!!</string>
+    <string name="hide_button_text">Hide</string>
+    <string name="comment_button_text">Comment</string>
+    <string name="share_button_text">Share</string>
+    <string name="comments_label">Comments:</string>
+</resources>
