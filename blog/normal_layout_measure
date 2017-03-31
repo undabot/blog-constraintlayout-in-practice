@@ -1,0 +1,31 @@
+<LinearLayout>
+    <RelativeLayout>
+        <ImageView/>
+        <TextView/>
+        <TextView/>
+        <View/>
+        <FloatingActionButton/>
+        <View/>
+        <FloatingActionButton/>
+        <ImageView/>
+        <TextView/>
+        <TextView/>
+    </RelativeLayout>
+    <LinearLayout>
+        <TextView/>
+        <TextView/>
+        <TextView/>
+        <TextView/>
+    </LinearLayout>
+    <LinearLayout>
+        <TextView/>
+        <TextView/>
+        <TextView/>
+        <TextView/>
+    </LinearLayout>
+    <LinearLayout>
+        <Button/>
+        <Button/>
+        <Button/>
+    </LinearLayout>
+</LinearLayout>

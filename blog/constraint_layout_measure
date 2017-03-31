@@ -1,0 +1,26 @@
+<ConstraintLayout>
+    <FloatingActionButton/>
+    <ImageView/>
+    <TextView/>
+    <TextView/>
+    <TextView/>
+    <TextView/>
+    <LinearLayout>
+        <TextView/>
+        <TextView/>
+        <TextView/>
+        <TextView/>
+    </LinearLayout>
+    <Button/>
+    <Button/>
+    <Button/>
+    <ImageView/>
+    <TextView/>
+    <TextView/>
+    <LinearLayout>
+        <TextView/>
+        <TextView/>
+        <TextView/>
+        <TextView/>
+    </LinearLayout>
+</ConstraintLayout>
