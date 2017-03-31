@@ -1,9 +1,13 @@
-package com.undabot.android.blog.constraintlayout;
+package com.undabot.android.blog.constraintlayout.custom;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
+
+import com.undabot.android.blog.constraintlayout.R;
+
+import timber.log.Timber;
 
 /** Maintains an aspect ratio based on either width or height. Disabled by default. */
 public class AspectRatioImageView extends AppCompatImageView {
@@ -58,6 +62,7 @@ public class AspectRatioImageView extends AppCompatImageView {
         }
 
         setMeasuredDimension(newWidth, newHeight);
+        Timber.d("<ImageView/>");
     }
 
     /** Get the aspect ratio for this image view. */

@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<com.undabot.android.blog.constraintlayout.custom.CustomConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/white">
 
-    <android.support.v7.widget.AppCompatImageView
+    <com.undabot.android.blog.constraintlayout.custom.CustomImageView
         android:id="@+id/image"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/constraint_layout"
         app:layout_constraintDimensionRatio="5:2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/lead_image"/>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.undabot.android.blog.constraintlayout.custom.CustomFloatingActionButton
         android:id="@+id/action_button"
         android:layout_width="35dp"
         android:layout_height="35dp"
@@ -29,7 +30,7 @@
         app:layout_constraintRight_toRightOf="@+id/image"
         app:layout_constraintTop_toBottomOf="@+id/image"/>
 
-    <android.support.v7.widget.AppCompatImageView
+    <com.undabot.android.blog.constraintlayout.custom.CustomImageView
         android:id="@+id/profile_image"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -40,7 +41,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image"/>
 
-    <android.support.v7.widget.AppCompatTextView
+    <com.undabot.android.blog.constraintlayout.custom.CustomTextView
         android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +55,7 @@
         app:layout_constraintLeft_toRightOf="@+id/profile_image"
         app:layout_constraintTop_toTopOf="@+id/profile_image"/>
 
-    <android.support.v7.widget.AppCompatTextView
+    <com.undabot.android.blog.constraintlayout.custom.CustomTextView
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,7 +66,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/user_name"
         app:layout_constraintTop_toBottomOf="@+id/user_name"/>
 
-    <android.support.v7.widget.AppCompatTextView
+    <com.undabot.android.blog.constraintlayout.custom.CustomTextView
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -79,7 +80,7 @@
         app:layout_constraintRight_toLeftOf="@+id/comments_label"
         app:layout_constraintTop_toBottomOf="@+id/profile_image"/>
 
-    <android.support.v7.widget.AppCompatTextView
+    <com.undabot.android.blog.constraintlayout.custom.CustomTextView
         android:id="@+id/comments_label"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -95,7 +96,7 @@
         app:layout_constraintTop_toTopOf="@+id/title"
         app:layout_goneMarginTop="20dp"/>
 
-    <LinearLayout
+    <com.undabot.android.blog.constraintlayout.custom.CustomLinearLayout
         android:id="@+id/container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -106,7 +107,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title">
 
-        <android.support.v7.widget.AppCompatTextView
+        <com.undabot.android.blog.constraintlayout.custom.CustomTextView
             android:id="@+id/description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -117,7 +118,7 @@
             android:paddingRight="10dp"
             android:text="@string/description"/>
 
-        <android.support.v7.widget.AppCompatTextView
+        <com.undabot.android.blog.constraintlayout.custom.CustomTextView
             android:id="@+id/comments"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -132,24 +133,22 @@
             android:textSize="12sp"
             android:textStyle="italic"/>
 
-    </LinearLayout>
+    </com.undabot.android.blog.constraintlayout.custom.CustomLinearLayout>
 
-    <android.support.v7.widget.AppCompatButton
+    <com.undabot.android.blog.constraintlayout.custom.CustomButton
         android:id="@+id/hide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/list_item_content_spacing"
         android:layout_marginTop="@dimen/list_item_content_spacing"
         android:text="@string/hide_button_text"
-        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn_comment"
-        app:layout_constraintTop_toBottomOf="@+id/container"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintTop_toBottomOf="@+id/container"/>
 
-    <android.support.v7.widget.AppCompatButton
+    <com.undabot.android.blog.constraintlayout.custom.CustomButton
         android:id="@+id/btn_comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -162,14 +161,13 @@
         app:layout_constraintRight_toLeftOf="@+id/share"
         app:layout_constraintTop_toTopOf="@+id/hide"/>
 
-    <android.support.v7.widget.AppCompatButton
+    <com.undabot.android.blog.constraintlayout.custom.CustomButton
         android:id="@+id/share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/share_button_text"
-        android:textColor="@color/colorPrimary"
         app:layout_constraintLeft_toRightOf="@+id/btn_comment"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_comment"/>
 
-</android.support.constraint.ConstraintLayout>
+</com.undabot.android.blog.constraintlayout.custom.CustomConstraintLayout>

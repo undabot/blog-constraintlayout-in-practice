@@ -88,10 +88,14 @@ final class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostHolder> {
                 comments.setText(post.getComments());
                 comments.setVisibility(View.VISIBLE);
                 commentsLabel.setVisibility(View.VISIBLE);
-                btnComment.setVisibility(View.VISIBLE);
             } else {
                 comments.setVisibility(View.GONE);
                 commentsLabel.setVisibility(View.GONE);
+            }
+
+            if (post.isCommentsAvailable()) {
+                btnComment.setVisibility(View.VISIBLE);
+            } else {
                 btnComment.setVisibility(View.GONE);
             }
         }
